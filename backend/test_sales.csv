@@ -1,0 +1,11 @@
+order_id,order_date,customer_id,region,product,revenue,quantity
+ORD001,2026-08-01,C001,North,Laptop,85000,2
+ORD002,2026-08-01,C002,South,Monitor,22000,3
+ORD003,2026-08-02,C003,North,Laptop,92000,2
+ORD004,2026-08-02,C004,West,Keyboard,4500,5
+ORD005,2026-08-03,C005,South,Monitor,,2
+ORD006,2026-08-03,C006,North,Mouse,3200,8
+ORD007,2026-08-04,C007,West,Laptop,88000,2
+ORD008,2026-08-04,C008,South,Keyboard,5000,6
+ORD009,2026-08-05,C009,North,Monitor,24000,3
+ORD010,2026-08-05,C010,East,Laptop,91000,2

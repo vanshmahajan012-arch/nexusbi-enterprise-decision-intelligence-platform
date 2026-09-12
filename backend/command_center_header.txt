@@ -1,0 +1,40 @@
+import React from "react";
+import {
+  Sparkles,
+  ArrowRight,
+  TrendingUp,
+  AlertTriangle,
+  GitFork,
+  Activity,
+  Sliders,
+  ShieldCheck,
+  CheckCircle2,
+  Globe,
+  ExternalLink,
+  ChevronRight,
+  Zap,
+} from "lucide-react";
+import { MetricCard } from "../shared/MetricCard";
+import { StatusBadge } from "../shared/StatusBadge";
+import { Sparkline } from "../shared/Sparkline";
+import {
+  COMMAND_CENTER_KPIS,
+  ANOMALIES_DATA,
+  DECISION_MATRIX_ITEMS,
+  INITIAL_LIVE_EVENTS,
+} from "../../data/mockData";
+import { ScreenId } from "../../types";
+import { useAaplLatestPrice } from "../../hooks/useAaplLatestPrice";
+
+interface CommandCenterScreenProps {
+  onNavigate: (screen: ScreenId) => void;
+}
+
+export const CommandCenterScreen: React.FC<CommandCenterScreenProps> = ({
+  onNavigate,
+}) => {
+  const { data: aaplMetric, isLoading: isAaplLoading } = useAaplLatestPrice();
+  const topAnomaly = ANOMALIES_DATA[0];
+  const topDecision = DECISION_MATRIX_ITEMS[0];
+
+  return (

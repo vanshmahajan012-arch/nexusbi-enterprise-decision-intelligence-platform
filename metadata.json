@@ -1,0 +1,6 @@
+{
+  "name": "NXUS BI - AI & Decision Intelligence",
+  "description": "Enterprise-grade AI-powered Business Intelligence, Root Cause Analysis, Predictive Forecasting, NL-to-SQL, Scenario Simulation, and Decision Intelligence Platform.",
+  "requestFramePermissions": [],
+  "majorCapabilities": ["MAJOR_CAPABILITY_SERVER_SIDE_GEMINI_API"]
+}
