@@ -12,10 +12,7 @@ export interface LiveMarketEvent {
   received_at: string | null;
 }
 
-const WS_BASE_URL =
-  window.location.protocol === "https:"
-    ? "wss://127.0.0.1:8000"
-    : "ws://127.0.0.1:8000";
+const WS_BASE_URL = (import.meta.env.VITE_API_BASE_URL || "http://127.0.0.1:8000").replace(/^http/, "ws");
 
 const MARKET_WS_URL = `${WS_BASE_URL}/ws/market`;
 
@@ -119,3 +116,4 @@ export function useLiveMarketSocket(symbol = "AAPL") {
     error,
   };
 }
+
